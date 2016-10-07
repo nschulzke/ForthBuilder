@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FileIO.cpp">
+      <Filter>FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="IOException.cpp">
+      <Filter>FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Lexer.cpp">
+      <Filter>Parsing FORTH\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseException.cpp">
+      <Filter>Parsing FORTH\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Parsing FORTH\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Word.cpp">
+      <Filter>Parsing FORTH\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Parsing FORTH\Containers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileIO.h">
+      <Filter>FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="IOException.h">
+      <Filter>FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexer.h">
+      <Filter>Parsing FORTH\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseException.h">
+      <Filter>Parsing FORTH\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Parsing FORTH\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Word.h">
+      <Filter>Parsing FORTH\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Parsing FORTH\Containers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="FileIO">
+      <UniqueIdentifier>{4e43b908-a735-41dc-8ffe-9c4fdc9a2985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing FORTH">
+      <UniqueIdentifier>{cfa91d3d-468b-45c8-bd74-c772c0315992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing FORTH\Components">
+      <UniqueIdentifier>{f23cbb73-32c2-437c-a36b-9dbafab52789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing FORTH\Containers">
+      <UniqueIdentifier>{64ae6706-642a-4084-aeeb-afb39c763979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing FORTH\Exceptions">
+      <UniqueIdentifier>{4e8bd91d-14e2-49a6-9a16-59b4e9c904c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

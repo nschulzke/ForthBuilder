@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ForthBuilder/v14
+/Debug
+/ForthBuilder/Debug
+/ForthBuilder.VC.VC.opendb
