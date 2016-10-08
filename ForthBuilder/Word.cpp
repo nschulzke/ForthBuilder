@@ -100,6 +100,7 @@ std::string to_string(const Word::Type& type)
 	case Word::Type::VARIABLE:	return "VARIABLE"; break;
 	case Word::Type::CONSTANT:	return "CONSTANT"; break;
 	case Word::Type::ARRAY:		return "ARRAY"; break;
+	case Word::Type::PRIMITIVE:	return "PRIMITIVE"; break;
 	default:					return "INVALID_WORD";
 	}
 }

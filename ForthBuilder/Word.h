@@ -13,7 +13,8 @@ public:
 		FUNCTION = 1,
 		VARIABLE = 2,
 		CONSTANT = 4,
-		ARRAY = 8
+		ARRAY = 8,
+		PRIMITIVE = 16,
 	};
 private:
 	Type type;

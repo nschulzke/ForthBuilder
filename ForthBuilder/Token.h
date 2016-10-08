@@ -16,7 +16,8 @@ public:
 		INVALID_TOKEN = 0,
 		WORD = 1,
 		NUMBER = 2,
-		STRING = 4
+		STRING = 4,
+		PRIMITIVE = 8,
 	};
 private:
 	// The string value of the token
