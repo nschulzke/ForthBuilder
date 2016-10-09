@@ -15,9 +15,8 @@ public:
 	enum Type {
 		INVALID_TOKEN = 0,
 		WORD = 1,
-		NUMBER = 2,
-		STRING = 4,
-		PRIMITIVE = 8,
+		PRIMITIVE = 2,
+		NUMBER = 4,
 	};
 private:
 	// The string value of the token
@@ -31,6 +30,10 @@ public:
 	Token();
 	// Creates a tokenString by pushing the supplied string through idToken().
 	Token(const std::string& tokenIn);
+	Token(const std::string& tokenIn, Type typeIn) :
+		tokenString(tokenIn),
+		type(typeIn)
+	{};
 	// Gets the type of the tokenString.
 	Token::Type getType() const;
 	// Gets the string associated with the tokenString.

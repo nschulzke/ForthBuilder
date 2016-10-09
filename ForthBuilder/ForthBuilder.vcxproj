@@ -111,21 +111,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Entry.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="IOException.cpp" />
     <ClCompile Include="ParseException.cpp" />
     <ClCompile Include="Lexer.cpp" />
     <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Primitive.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Token.cpp" />
     <ClCompile Include="Word.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entry.h" />
     <ClInclude Include="FileIO.h" />
     <ClInclude Include="IOException.h" />
     <ClInclude Include="ParseException.h" />
     <ClInclude Include="Lexer.h" />
     <ClInclude Include="Parser.h" />
+    <ClInclude Include="Primitive.h" />
     <ClInclude Include="Token.h" />
     <ClInclude Include="Word.h" />
   </ItemGroup>

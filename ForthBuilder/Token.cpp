@@ -5,14 +5,6 @@ typedef boost::tokenizer<list_separator> tokenizer;
 
 Token::Type Token::idToken(const std::string& tokenString)
 {
-	for (auto const & character : tokenString)
-	{
-		if (isspace(character))
-		{
-			// Come back to this later: quoted strings don't work the same in Forth
-			return STRING;
-		}
-	}
 	std::regex rgx("(^[-]?[0-9]+$)");
 	if (std::regex_match(tokenString, rgx))
 	{
@@ -80,10 +72,10 @@ std::string to_string(const Token::Type& type)
 {
 	switch (type)
 	{
-	case Token::Type::WORD:		return "WORD"; break;
-	case Token::Type::NUMBER:	return "NUMBER"; break;
-	case Token::Type::STRING:	return "STRING"; break;
-	default:					return "INVALID_TOKEN";
+	case Token::Type::WORD:			return "WORD"; break;
+	case Token::Type::NUMBER:		return "NUMBER"; break;
+	case Token::Type::PRIMITIVE:	return "PRIMITIVE"; break;
+	default:						return "INVALID_TOKEN";
 	}
 }
 

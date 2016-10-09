@@ -5,6 +5,10 @@
 #include "ParseException.h"
 #include "boost/algorithm/string.hpp"
 
+const int FLAG1 = 1;
+const int FLAG2 = 2;
+const int FLAG3 = 4;
+
 class Word
 {
 public:
@@ -14,32 +18,25 @@ public:
 		VARIABLE = 2,
 		CONSTANT = 4,
 		ARRAY = 8,
-		PRIMITIVE = 16,
 	};
 private:
 	Type type;
 	std::string name;
-	std::string alias;
 	std::vector<Token> members;
-	void setAlias();
+	int flags;
 public:
-	Word(const Word::Type& typeIn, const std::string& nameIn, const std::vector<Token>& membersIn);
-	Word(const Word::Type& typeIn, const std::string& nameIn, const std::string& aliasIn) :
-		type(typeIn),
-		name(nameIn),
-		alias(aliasIn)
-	{};
-	Word(const Word::Type& typeIn, const std::string& nameIn, const Token& memberIn);
-	Word(const Word::Type& typeIn, const std::string& nameIn);
+	Word(const Word::Type& typeIn, const std::string& nameIn, const std::vector<Token>& membersIn, int flagsIn = 0);
+	Word(const Word::Type& typeIn, const std::string& nameIn, const Token& memberIn, int flagsIn = 0);
+	Word(const Word::Type& typeIn, const std::string& nameIn, int flagsIn = 0);
 
 	std::vector<Token>::const_iterator begin() const { return members.begin(); };
 	std::vector<Token>::const_iterator end() const { return members.end(); };
 	bool contains(const Token& tokenIn) const;
 	// Returns the string representation of the word
 	std::string toString() const;
-	const std::string& getName() const { return name; };
-	const std::string& getAlias() const { return alias; };
-	const Type getType() const { return type; };
+	std::string getName() const { return name; };
+	Type getType() const { return type; };
+	int getFlags() const { return flags; };
 
 	// Defines the insertion operator for the Word class
 	friend std::ostream& operator<<(std::ostream& outstream, const Word& word);
