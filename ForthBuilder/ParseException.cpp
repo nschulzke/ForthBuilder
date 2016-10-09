@@ -4,8 +4,7 @@ const std::string ParseException::MESSAGES[] = {
 	"Unknown error",
 	"Unknown name",
 	"Unexpected end of file",
-	"Expected word",
-	"Expected defining word"
+	"Unexpected token",
 };
 
 int ParseException::getWordNum() const

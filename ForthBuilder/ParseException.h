@@ -12,10 +12,9 @@ public:
 		OTHER_ERROR = 0,
 		UNKNOWN_NAME,
 		UNEXPECTED_EOF,
-		EXPECTED_WORD,
-		EXPECTED_DEF_WORD
+		UNEXPECTED_TOKEN,
 	};
-private:
+protected:
 	std::string message;
 	int wordNum;
 	Token token;

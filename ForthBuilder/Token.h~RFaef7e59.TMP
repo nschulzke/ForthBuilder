@@ -14,10 +14,9 @@ class Token
 public:
 	enum Type {
 		INVALID_TOKEN = 0,
-		WORD,
-		PRIMITIVE,
-		NUMBER,
-		DIRECTIVE,
+		WORD = 1,
+		PRIMITIVE = 2,
+		NUMBER = 4,
 	};
 private:
 	// The string value of the token

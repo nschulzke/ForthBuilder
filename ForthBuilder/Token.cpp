@@ -5,15 +5,14 @@ typedef boost::tokenizer<list_separator> tokenizer;
 
 Token::Type Token::idToken(const std::string& tokenString)
 {
-	std::regex rgx("(^[-]?[0-9]+$)");
-	if (std::regex_match(tokenString, rgx))
-	{
+	std::regex number("(^[-]?[0-9]+$)");
+	std::regex directive("(^#.*$)");
+	if (std::regex_match(tokenString, number))
 		return NUMBER;
-	}
+	if (std::regex_match(tokenString, directive))
+		return DIRECTIVE;
 	else
-	{
 		return WORD;
-	}
 }
 
 Token::Token(const std::string& tokenIn)

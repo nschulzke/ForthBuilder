@@ -16,8 +16,12 @@ public:
 		flags(flagsIn)
 	{};
 
+	std::string toString() const;
 	std::string getName() const { return name; };
 	std::string getLabel() const { return label; };
 	int getFlags() const { return flags; };
+
+	// Defines the insertion operator for the Primitive class
+	friend std::ostream& operator<<(std::ostream& outstream, const Primitive& word);
 };
 

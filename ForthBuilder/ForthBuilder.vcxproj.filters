@@ -20,14 +20,14 @@
     <ClCompile Include="Word.cpp">
       <Filter>Parsing\Components</Filter>
     </ClCompile>
-    <ClCompile Include="Parser.cpp">
-      <Filter>Parsing\Containers</Filter>
-    </ClCompile>
-    <ClCompile Include="Entry.cpp">
-      <Filter>Compiler</Filter>
-    </ClCompile>
     <ClCompile Include="Primitive.cpp">
       <Filter>Parsing\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry.cpp">
+      <Filter>Compiler\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Parsing\Containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,14 +49,14 @@
     <ClInclude Include="Word.h">
       <Filter>Parsing\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Parser.h">
-      <Filter>Parsing\Containers</Filter>
-    </ClInclude>
-    <ClInclude Include="Entry.h">
-      <Filter>Compiler</Filter>
-    </ClInclude>
     <ClInclude Include="Primitive.h">
       <Filter>Parsing\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry.h">
+      <Filter>Compiler\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Parsing\Containers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +77,9 @@
     </Filter>
     <Filter Include="Parsing\Exceptions">
       <UniqueIdentifier>{4e8bd91d-14e2-49a6-9a16-59b4e9c904c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compiler\Components">
+      <UniqueIdentifier>{4ad7a6b8-7dd1-4c00-8e8d-59ec0b30dfd9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
